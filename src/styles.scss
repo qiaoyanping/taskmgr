@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import 'theme.scss';
+
+html,
+body,
+app-root,
+.site,
+mat-sidenav-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.square {
+  width:100px;
+  height:100px;
+  background-color: black;
+}

@@ -1,0 +1,22 @@
+@import '~../node_modules/@angular/material/_theming'; //导入主题支持
+
+@include mat-core(); //将基础风格导入
+
+$my-app-primary: mat-palette($mat-indigo); //系统调色板函数，主要色
+$my-app-accent: mat-palette($mat-pink, A200, A100, A400); //次要色，默认情况下的颜色深浅，亮的主题下颜色，深夜模式下颜色
+$my-app-warn:mat-palette($mat-red);
+
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn); //白天的自定义主题
+@include angular-material-theme($my-app-theme); //形成默认的自定义主题
+
+
+$my-dark-primary: mat-palette($mat-blue-grey); //系统调色板函数，主要色
+$my-dark-accent: mat-palette($mat-amber, A200, A100, A400); //次要色，默认情况下的颜色深浅，亮的主题下颜色，深夜模式下颜色
+$my-dark-warn:mat-palette($mat-deep-orange);
+
+$my-dark-theme: mat-dark-theme($my-dark-primary, $my-dark-accent, $my-dark-warn); //黑夜的自定义主题
+
+
+.myapp-dark-theme {
+  @include angular-material-theme($my-dark-theme); //形成黑夜主题
+}
