@@ -16,9 +16,9 @@
       <mat-form-field class="full-width">
         <input matInput type="password" placeholder="重复输入您的密码" formControlName="repeat">
       </mat-form-field>
-      <app-image-list-select
-                             [useSvgIcon]='true' [title]="'选择头像：'" [cols]='6' [items]='items' formControlName="avatar">
+      <app-image-list-select [useSvgIcon]='true' [title]="'选择头像：'" [cols]='6' [items]='items' formControlName="avatar">
       </app-image-list-select>
+      <app-age-input formControlName="dateOfBirth"></app-age-input>
       <button mat-raised-button type="submit" color="primary">注册</button>
     </mat-card-content>
     <mat-card-actions class="text-right">

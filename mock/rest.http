@@ -1,0 +1,26 @@
+GET http://localhost:3000/projects?members_like=2
+
+###
+GET http://localhost:3000/taskLists
+
+###
+PUT  http://localhost:3000/taskLists/VfvI6-p
+Content-Type: application/json
+
+{
+   "name": "list666",
+    "projectId": "aaaa",
+    "order": 1
+}
+
+###
+PATCH  http://localhost:3000/taskLists/VfvI6-p
+Content-Type: application/json
+
+{
+   "name": "list9999"
+}
+
+###
+DELETE   http://localhost:3000/taskLists/VfvI6-p
+

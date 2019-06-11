@@ -6,7 +6,7 @@ import {
   FormBuilder
 } from "@angular/forms";
 import { QuoteService } from "src/app/services/quote.service";
-import { Quote } from "@angular/compiler";
+import { Quote } from "../../domain";
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",

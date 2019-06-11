@@ -4,4 +4,5 @@ export interface User {
   password: string;
   name: string;
   avatar: string; //头像
+  projectIds: string[];
 }

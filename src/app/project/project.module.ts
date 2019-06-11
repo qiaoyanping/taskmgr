@@ -5,6 +5,7 @@ import { NewProjectComponent } from "./new-project/new-project.component";
 import { InviteComponent } from "./invite/invite.component";
 import { SharedModule } from "../shared/shared.module";
 import { ProjectRoutingModule } from "./project-routing.module";
+import { ProjectService } from "../services/project.service";
 @NgModule({
   declarations: [
     ProjectListComponent,
@@ -13,6 +14,7 @@ import { ProjectRoutingModule } from "./project-routing.module";
     InviteComponent
   ],
   imports: [SharedModule, ProjectRoutingModule],
-  entryComponents: [InviteComponent, NewProjectComponent]
+  entryComponents: [InviteComponent, NewProjectComponent],
+  providers: [ProjectService]
 })
 export class ProjectModule {}

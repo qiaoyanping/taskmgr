@@ -2,6 +2,7 @@
   height: 360px;
   flex: 0 0 360px;
   margin: 10px;
+  display: flex;
 }
 
 .container {
@@ -10,7 +11,7 @@
   flex-wrap: wrap;
 }
 
-.fab-button {
+.fab-button { 
   position: fixed;
   right: 32px;
   bottom: 96px;
